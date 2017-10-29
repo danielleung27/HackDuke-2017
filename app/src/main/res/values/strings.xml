@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Super Supply</string>
+    <string name="app_name">Meal Mover</string>
     <string name="title_activity_vendor_listing">Current Listings</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_user_activity">Map</string>

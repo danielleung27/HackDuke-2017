@@ -51,10 +51,8 @@
             android:id="@+id/weight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
+            android:layout_alignStart="@+id/expiration"
             android:layout_below="@+id/expiration"
-            android:layout_marginTop="160dp"
             android:ems="10"
             android:hint="Weight"
             android:inputType="textPersonName"
@@ -65,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/weight"
-            android:layout_centerVertical="true"
+            android:layout_below="@+id/weight"
             android:ems="10"
             android:hint="Description"
             android:inputType="textPersonName"
@@ -75,11 +73,36 @@
             android:id="@+id/expiration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
+            android:layout_below="@+id/location"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="100dp"
             android:ems="10"
             android:hint="Expiration Date"
+            android:inputType="textPersonName"
+            android:singleLine="false" />
+
+        <EditText
+            android:id="@+id/longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/latitude"
+            android:layout_alignBottom="@+id/latitude"
+            android:layout_marginStart="17dp"
+            android:layout_toEndOf="@+id/latitude"
+            android:width="90dp"
+            android:ems="10"
+            android:hint="Longitude, long"
+            android:inputType="textPersonName"
+            android:singleLine="false" />
+
+        <EditText
+            android:id="@+id/latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/food"
+            android:layout_below="@+id/food"
+            android:width="90dp"
+            android:ems="10"
+            android:hint="Latitude"
             android:inputType="textPersonName"
             android:singleLine="false" />
 
@@ -87,10 +110,19 @@
             android:id="@+id/submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/food"
+            android:layout_below="@+id/longitude"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="23dp"
+            android:layout_marginTop="11dp"
             android:text="Submit" />
+
+        <TextView
+            android:id="@+id/thanks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/submit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:textSize="24sp" />
     </RelativeLayout>
 
 </RelativeLayout>

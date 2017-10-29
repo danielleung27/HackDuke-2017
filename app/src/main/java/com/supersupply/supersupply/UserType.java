@@ -21,14 +21,14 @@ public class UserType extends AppCompatActivity {
         vendor_button.setOnClickListener(
             new Button.OnClickListener() {
                 public void onClick(View v) {
-                    startActivity(new Intent(UserType.this, vendor_listing.class));
+                    startActivity(new Intent(UserType.this, AddActivity.class));
                 };
             }
         );
         user_button.setOnClickListener(
                 new Button.OnClickListener() {
                     public void onClick(View v) {
-                        startActivity(new Intent(UserType.this, user_activity.class));
+                        startActivity(new Intent(UserType.this, vendor_listing.class));
                     };
                 }
         );

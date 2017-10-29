@@ -45,13 +45,11 @@ public class vendor_listing extends AppCompatActivity {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 String list = "";
-                int i = 0;
-                for(DataSnapshot child : dataSnapshot.getChildren()) {
-                    String value = child.getValue(String.class);
-                    list += value;
-                    if(i != 4)list += "\n";
-                    i++;
-                }
+                list += "Name: " + dataSnapshot.child("name").getValue(String.class) + "\n";
+                list += "Location: " + dataSnapshot.child("location").getValue(String.class) + "\n";
+                list += "Expiration: " + dataSnapshot.child("expiration").getValue(String.class) + "\n";
+                list += "Amount: " + dataSnapshot.child("weight").getValue(String.class) + "\n";
+                list += "Description: " + dataSnapshot.child("food").getValue(String.class);
                 food.add(list);
                 arrayAdapter.notifyDataSetChanged();
             }
@@ -81,7 +79,7 @@ public class vendor_listing extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(vendor_listing.this, AddActivity.class));
+                startActivity(new Intent(vendor_listing.this, user_activity.class));
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
