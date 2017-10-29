@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.supersupply.supersupply.R;
@@ -32,7 +33,9 @@ public class vendor_listing extends AppCompatActivity {
         Bundle addData = getIntent().getExtras();
         if(addData == null) return;
         String entry_message = addData.getString("entry_message");
-        final TextView entries = (TextView) findViewById(R.id.entries);
-        entries.setText(entry_message);
+        LinearLayout group = (LinearLayout)findViewById(R.id.entries);
+        TextView newEntry = new TextView(this);
+        newEntry.setText(entry_message);
+        group.addView(newEntry);
     }
 }

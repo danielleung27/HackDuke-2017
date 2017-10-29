@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "875635262066",
+    "firebase_url": "https://meal-mover.firebaseio.com",
+    "project_id": "meal-mover",
+    "storage_bucket": "meal-mover.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875635262066:android:4ec6342c92344039",
+        "android_client_info": {
+          "package_name": "com.supersupply.supersupply"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875635262066-c3uk4tk24ih604mnecd40n9km2pio6tb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.supersupply.supersupply",
+            "certificate_hash": "c283e41fc2873d575b44d13259b30fb4a8c21468"
+          }
+        },
+        {
+          "client_id": "875635262066-6apfcak7dahkmf4n9cha37tfesgciafh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_VGms4NKyx8UXYrMoZJR9ElMOC5phdJg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875635262066-6apfcak7dahkmf4n9cha37tfesgciafh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

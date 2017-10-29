@@ -19,15 +19,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:text="Vendor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/vendor_button"
-        android:layout_above="@+id/user_button"
-        android:layout_alignStart="@+id/user_button"
-        android:layout_marginBottom="47dp" />
-
     <TextView
         android:text="Welcome to Super Supply"
         android:layout_width="220dp"
@@ -35,5 +26,16 @@
         android:layout_marginBottom="27dp"
         android:id="@+id/textView"
         android:layout_above="@+id/vendor_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="36sp" />
+
+    <Button
+        android:text="Vendor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vendor_button"
+        android:layout_marginBottom="29dp"
+        android:layout_above="@+id/user_button"
+        android:layout_alignStart="@+id/user_button" />
 </RelativeLayout>

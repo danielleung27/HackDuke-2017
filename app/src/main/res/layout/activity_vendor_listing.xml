@@ -41,10 +41,6 @@
         app:layout_anchorGravity="bottom|end"
         app:srcCompat="@android:drawable/ic_input_add" />
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="match_parent"
-        android:layout_height="87dp"
-        android:id="@+id/entries"/>
+    <include layout="@layout/content_vendor_listing" />
 
 </android.support.design.widget.CoordinatorLayout>
