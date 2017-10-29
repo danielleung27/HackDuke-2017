@@ -7,13 +7,18 @@ import android.view.View;
 import android.content.Intent;
 import android.widget.EditText;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class AddActivity extends AppCompatActivity {
 
+    private DatabaseReference mDatabase;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
         Button submit = (Button) findViewById(R.id.submit);
+        mDatabase = FirebaseDatabase.getInstance().getReference().push();
         submit.setOnClickListener(
                 new Button.OnClickListener() {
                     public void onClick(View v) {
@@ -21,10 +26,14 @@ public class AddActivity extends AppCompatActivity {
                         final EditText weight_input = (EditText) findViewById(R.id.weight);
                         final EditText expiration_input = (EditText) findViewById(R.id.expiration);
                         final EditText food_input = (EditText) findViewById(R.id.food);
-                        String message = weight_input.getText().toString() + " of " +
+                       /* String message = weight_input.getText().toString() + " of " +
                                 food_input.getText().toString() + " expiring at " +
-                                expiration_input.getText().toString();
-                        i.putExtra("entry_message", message);
+                                expiration_input.getText().toString();*/
+
+                        mDatabase.child("food").setValue(food_input.getText().toString());
+                        mDatabase.child("weight").setValue(weight_input.getText().toString());
+                        mDatabase.child("expiration").setValue(expiration_input.getText().toString());
+                        //i.putExtra("entry_message", message);
                         startActivity(i);
                     }
                 }

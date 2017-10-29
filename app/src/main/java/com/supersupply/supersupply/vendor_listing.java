@@ -30,12 +30,12 @@ public class vendor_listing extends AppCompatActivity {
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        Bundle addData = getIntent().getExtras();
+      /*  Bundle addData = getIntent().getExtras();
         if(addData == null) return;
         String entry_message = addData.getString("entry_message");
         LinearLayout group = (LinearLayout)findViewById(R.id.entries);
         TextView newEntry = new TextView(this);
         newEntry.setText(entry_message);
-        group.addView(newEntry);
+        group.addView(newEntry);*/
     }
 }
