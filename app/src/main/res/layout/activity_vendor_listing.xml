@@ -41,6 +41,11 @@
         app:layout_anchorGravity="bottom|end"
         app:srcCompat="@android:drawable/ic_input_add" />
 
-    <include layout="@layout/content_vendor_listing" />
+    <!--<include layout="@layout/content_vendor_listing" />-->
+    <ListView
+        android:id="@+id/entries"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
 
 </android.support.design.widget.CoordinatorLayout>
