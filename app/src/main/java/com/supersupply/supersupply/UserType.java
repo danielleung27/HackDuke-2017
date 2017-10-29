@@ -17,6 +17,7 @@ public class UserType extends AppCompatActivity {
         setContentView(R.layout.activity_user_type);
         Button user_button = (Button)findViewById(R.id.user_button);
         Button vendor_button = (Button)findViewById(R.id.vendor_button);
+
         vendor_button.setOnClickListener(
             new Button.OnClickListener() {
                 public void onClick(View v) {

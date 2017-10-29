@@ -24,6 +24,8 @@ public class AddActivity extends AppCompatActivity {
                 new Button.OnClickListener() {
                     public void onClick(View v) {
                         Intent i = new Intent(AddActivity.this, vendor_listing.class);
+                        final EditText name_input = (EditText) findViewById(R.id.name);
+                        final EditText location_input = (EditText) findViewById(R.id.location);
                         final EditText weight_input = (EditText) findViewById(R.id.weight);
                         final EditText expiration_input = (EditText) findViewById(R.id.expiration);
                         final EditText food_input = (EditText) findViewById(R.id.food);
@@ -34,6 +36,8 @@ public class AddActivity extends AppCompatActivity {
                         mDatabase.child("food").setValue(food_input.getText().toString());
                         mDatabase.child("weight").setValue(weight_input.getText().toString());
                         mDatabase.child("expiration").setValue(expiration_input.getText().toString());
+                        mDatabase.child("location").setValue(location_input.getText().toString());
+                        mDatabase.child("name").setValue(name_input.getText().toString());
                         //i.putExtra("entry_message", message);
                         startActivity(i);
                     }

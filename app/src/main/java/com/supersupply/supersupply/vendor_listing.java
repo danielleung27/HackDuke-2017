@@ -49,7 +49,7 @@ public class vendor_listing extends AppCompatActivity {
                 for(DataSnapshot child : dataSnapshot.getChildren()) {
                     String value = child.getValue(String.class);
                     list += value;
-                    if(i != 2)list += "\n";
+                    if(i != 4)list += "\n";
                     i++;
                 }
                 food.add(list);
